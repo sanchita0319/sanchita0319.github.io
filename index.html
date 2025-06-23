@@ -10,7 +10,6 @@
 
 		const queryParams = new URLSearchParams(window.location.search);
 		const fraudCaseId = queryParams.get("phone");
-		alert(fraudCaseId);
 		
 		function contextProvider(){
 			return {
@@ -20,10 +19,8 @@
 
 
 		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
-			alert("Hello");
 			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
 			let registeredContextProvider = Microsoft.Omnichannel.LiveChatWidget.SDK.getContextProvider();
-			alert(registeredContextProvider);
 			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
 		});
 
