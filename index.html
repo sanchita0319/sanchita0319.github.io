@@ -11,6 +11,7 @@
 		const queryParams = new URLSearchParams(window.location.search);
 		const fraudCaseId = queryParams.get("phone");
 		const channel = queryParams.get("channel");
+		alert(channel);
 		
 		function contextProvider(){
 			return {
