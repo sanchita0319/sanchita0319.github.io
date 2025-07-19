@@ -11,11 +11,13 @@
 		const queryParams = new URLSearchParams(window.location.search);
 		const fraudCaseId = queryParams.get("phone");
 		const channel = queryParams.get("channel");
+		const name = queryParams.get("name");
 		
 		function contextProvider(){
 			return {
 				'fraudCaseId': {'value': fraudCaseId},
-				'channel': {'value': channel}
+				'channel': {'value': channel},
+				'name': {'value': name}
 			};
 		}
 
