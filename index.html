@@ -21,9 +21,8 @@
 		}
 
 		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
-			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
 			let registeredContextProvider = Microsoft.Omnichannel.LiveChatWidget.SDK.getContextProvider();
-			alert(name);
+			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(registeredContextProvider);
 			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
 		});
 
