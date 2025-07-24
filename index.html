@@ -25,6 +25,7 @@
 
 		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
 			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
+			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat({inNewWindow: true});
 		});
 
 	</script>
