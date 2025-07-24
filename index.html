@@ -20,7 +20,7 @@
 			};
 		}
 
-		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
+		window.addEventListener("lcw:startChat", function handleLivechatStartedEvent(){
 			Microsoft.Omnichannel.LiveChatWidget.SDK.closeChat();
 			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
 			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
