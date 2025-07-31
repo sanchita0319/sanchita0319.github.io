@@ -15,21 +15,18 @@
 		alert(name);
 		
 		
-		// function contextProvider(){
-			// return {
-				// 'fraudCaseId': {'value': fraudCaseId},
-				// 'name': {'value': name}
-			// };
-		// }
+		function contextProvider(){
+			return {
+				'fraudCaseId': {'value': fraudCaseId},
+				'name': {'value': name}
+			};
+		}
 		
 
 		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
-			// Microsoft.Omnichannel.LiveChatWidget.SDK.closeChat();
-			// Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
-			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat(customContext: {
-									   'fraudCaseId': {'value': fraudCaseId},
-									   'name': {'value': name}   
-									});
+			Microsoft.Omnichannel.LiveChatWidget.SDK.closeChat();
+			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
+			Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
 			});
 
 	</script>
