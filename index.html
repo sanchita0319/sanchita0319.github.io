@@ -19,10 +19,6 @@
 			};
 		}
 
-		window.addEventListener("lcw:chatRetrieved", function handleLivechatRetrievedEvent(){
-			Microsoft.Omnichannel.LiveChatWidget.SDK.closeChat();
-    
-		});
 
 		window.addEventListener("lcw:ready", function handleLivechatReadyEvent(){
 			Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
@@ -32,6 +28,7 @@
 	</script>
   </body>
 </html>
+
 
 
 
